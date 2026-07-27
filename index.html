@@ -3,153 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مونتاژ الکترونیک البرز | مونتاژ بردهای SMD و DIP</title>
-    
-    <!-- Font Awesome با CDN سریع -->
+    <title>hilife tajhiz | مونتاژ حرفه‌ای بردهای الکترونیکی</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
     <style>
-        /* ===== فشرده‌سازی شده برای سرعت بالا ===== */
         *{margin:0;padding:0;box-sizing:border-box}body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:#f8fafc;color:#1e293b;line-height:1.7}.container{max-width:1200px;margin:0 auto;padding:0 20px}
-        /* هدر */
-        header{background:rgba(255,255,255,0.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 4px 20px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,0.3)}.header-content{display:flex;justify-content:space-between;align-items:center;padding:15px 0;flex-wrap:wrap;gap:15px}.logo-area{display:flex;align-items:center;gap:12px}.logo-placeholder{width:50px;height:50px;background:linear-gradient(145deg,#2563eb,#1e40af);border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:18px;box-shadow:0 4px 8px rgba(37,99,235,0.2)}.logo-text{font-size:1.3rem;font-weight:800;color:#0f172a;letter-spacing:-0.5px}.logo-text span{color:#2563eb}.contact-info{display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:0.9rem}.contact-info i{color:#2563eb;margin-left:6px;width:18px}.contact-info a{color:#1e293b;text-decoration:none;transition:color .2s}.contact-info a:hover{color:#2563eb}.cta-button{background:linear-gradient(145deg,#2563eb,#1d4ed8);color:#fff!important;padding:8px 24px;border-radius:50px;font-weight:700;box-shadow:0 4px 12px rgba(37,99,235,0.3);transition:all .3s ease}.cta-button:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(37,99,235,0.4);color:#fff!important}
-        /* هیرو */
+        header{background:rgba(255,255,255,0.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 4px 20px rgba(0,0,0,0.05);position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,0.3)}.header-content{display:flex;justify-content:space-between;align-items:center;padding:15px 0;flex-wrap:wrap;gap:15px}.logo-area{display:flex;align-items:center;gap:12px}.logo-area img{height:50px;width:auto;border-radius:8px}.logo-text{font-size:1.3rem;font-weight:800;color:#0f172a;letter-spacing:-0.5px}.logo-text span{color:#2563eb}.contact-info{display:flex;align-items:center;gap:20px;flex-wrap:wrap;font-size:0.9rem}.contact-info i{color:#2563eb;margin-left:6px;width:18px}.contact-info a{color:#1e293b;text-decoration:none;transition:color .2s}.contact-info a:hover{color:#2563eb}.cta-button{background:linear-gradient(145deg,#2563eb,#1d4ed8);color:#fff!important;padding:8px 24px;border-radius:50px;font-weight:700;box-shadow:0 4px 12px rgba(37,99,235,0.3);transition:all .3s ease}.cta-button:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(37,99,235,0.4);color:#fff!important}
         .hero{padding:60px 0 30px;background:linear-gradient(135deg,#eff6ff,#fff)}.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.hero-title{font-size:2.8rem;font-weight:900;line-height:1.2;color:#0f172a;margin-bottom:15px}.hero-title span{color:#2563eb}.hero-desc{font-size:1.1rem;color:#475569;margin-bottom:25px}.hero-buttons{display:flex;gap:15px;flex-wrap:wrap}.btn-primary{background:linear-gradient(145deg,#2563eb,#1d4ed8);color:#fff;padding:12px 32px;border-radius:50px;text-decoration:none;font-weight:700;display:inline-block;transition:all .3s ease;box-shadow:0 4px 12px rgba(37,99,235,0.3)}.btn-primary:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(37,99,235,0.4);color:#fff}.btn-outline{background:transparent;color:#1e293b;padding:12px 32px;border-radius:50px;text-decoration:none;font-weight:700;border:2px solid #cbd5e1;transition:all .3s ease;display:inline-block}.btn-outline:hover{border-color:#2563eb;color:#2563eb;transform:translateY(-3px)}.hero-image{background:linear-gradient(145deg,#e2e8f0,#f8fafc);border-radius:24px;padding:10px;box-shadow:0 20px 40px rgba(0,0,0,0.08);text-align:center}.hero-image img{max-width:100%;border-radius:16px;max-height:400px;object-fit:cover}
-        /* خدمات */
         .section-title{text-align:center;font-size:2.2rem;font-weight:800;margin-bottom:15px;color:#0f172a}.section-sub{text-align:center;color:#64748b;max-width:700px;margin:0 auto 50px;font-size:1.05rem}.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;margin:40px 0 60px}.service-card{background:#fff;padding:30px 20px;border-radius:20px;text-align:center;box-shadow:0 10px 30px rgba(0,0,0,0.04);transition:all .3s ease;border:1px solid rgba(255,255,255,0.5)}.service-card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(0,0,0,0.08);border-color:#bfdbfe}.service-icon{font-size:2.5rem;color:#2563eb;margin-bottom:15px}.service-card h3{font-size:1.2rem;margin-bottom:8px;color:#0f172a;font-weight:700}.service-card p{color:#64748b;font-size:.9rem}
-        /* گالری */
         .gallery-section{padding:40px 0 60px}.gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;margin-top:20px}.gallery-item{border-radius:16px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,0.06);transition:all .3s ease;aspect-ratio:1/1;background:#e2e8f0}.gallery-item:hover{transform:scale(1.03);box-shadow:0 12px 30px rgba(0,0,0,0.12)}.gallery-item img{width:100%;height:100%;object-fit:cover;display:block}
-        /* آمار */
         .stats-section{background:linear-gradient(135deg,#0f172a,#1e293b);color:#fff;padding:60px 0;border-radius:30px;margin:30px 0 50px}.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:30px;text-align:center}.stat-item h3{font-size:2.2rem;font-weight:800;color:#60a5fa}.stat-item p{color:#cbd5e1;font-size:1rem;margin-top:5px}
-        /* تماس */
         .contact-section{background:#fff;border-radius:30px;padding:50px 40px;box-shadow:0 10px 40px rgba(0,0,0,0.04);margin:30px 0 50px}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}.contact-info-list{list-style:none}.contact-info-list li{display:flex;align-items:center;gap:15px;padding:15px 0;border-bottom:1px solid #f1f5f9}.contact-info-list i{width:40px;height:40px;background:#eff6ff;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#2563eb;font-size:1.1rem}.contact-form input,.contact-form textarea{width:100%;padding:14px 18px;border:1px solid #e2e8f0;border-radius:14px;font-family:inherit;transition:border .2s;margin-bottom:15px}.contact-form input:focus,.contact-form textarea:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,0.1)}.contact-form button{background:#2563eb;color:#fff;border:none;padding:14px 30px;border-radius:50px;font-weight:700;font-family:inherit;cursor:pointer;transition:background .2s}.contact-form button:hover{background:#1d4ed8}
-        /* فوتر */
         footer{background:#0f172a;color:#94a3b8;padding:30px 0;margin-top:40px;border-radius:30px 30px 0 0;text-align:center}footer a{color:#94a3b8;text-decoration:none}footer a:hover{color:#fff}
-        /* ریسپانسیو */
+        .keywords{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:15px}.keywords span{background:#e2e8f0;padding:4px 12px;border-radius:20px;font-size:.75rem;color:#475569}
         @media(max-width:768px){.hero-grid{grid-template-columns:1fr;text-align:center}.hero-buttons{justify-content:center}.hero-title{font-size:2.2rem}.header-content{flex-direction:column;align-items:stretch;gap:12px}.contact-info{justify-content:center;font-size:.8rem;gap:12px}.contact-grid{grid-template-columns:1fr}.section-title{font-size:1.8rem}.gallery-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}.stats-grid{grid-template-columns:1fr 1fr}.logo-text{font-size:1.1rem}}
         @media(max-width:480px){.gallery-grid{grid-template-columns:1fr 1fr;gap:10px}.contact-section{padding:30px 20px}.hero-title{font-size:1.8rem}}
     </style>
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
 <header>
     <div class="container header-content">
         <div class="logo-area">
-            <div class="logo-placeholder"><i class="fas fa-microchip"></i></div>
-            <div class="logo-text">مونتاژ <span>البرز</span></div>
+            <img src="https://mhkh110.github.io/board/Logo2.png" alt="hilife tajhiz لوگو">
+            <div class="logo-text"><span>hilife</span> tajhiz</div>
         </div>
         <div class="contact-info">
             <a href="tel:02177141351"><i class="fas fa-phone-alt"></i> ۰۲۱-۷۷۱۴۱۳۵۱</a>
             <a href="mailto:hamidi.shm@gmail.com"><i class="fas fa-envelope"></i> hamidi.shm@gmail.com</a>
-            <a href="#" class="cta-button"><i class="fas fa-headset"></i> مشاوره</a>
+            <a href="#" class="cta-button"><i class="fas fa-headset"></i> مشاوره رایگان</a>
         </div>
     </div>
 </header>
 
-<!-- ===== HERO ===== -->
 <section class="hero">
     <div class="container hero-grid">
         <div>
             <h1 class="hero-title">مونتاژ حرفه‌ای بردهای <span>الکترونیکی</span></h1>
-            <p class="hero-desc">خدمات تخصصی <strong>مونتاژ SMD و DIP</strong> با بروزترین تجهیزات. از نمونه تا انبوه، با تضمین کیفیت.</p>
+            <p class="hero-desc">ارائه خدمات تخصصی <strong>مونتاژ قطعات SMD و DIP</strong> با بروزترین تجهیزات. از نمونه‌سازی تا تیراژ انبوه، با تضمین کیفیت و تحویل سریع.</p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn-primary">ثبت سفارش</a>
                 <a href="#gallery" class="btn-outline">نمونه کارها</a>
             </div>
-            <p style="margin-top:20px;font-size:.85rem;color:#64748b;">
-                <i class="fas fa-tags"></i> مونتاژ برد الکترونیکی | SMD | DIP | مونتاژ دستی
-            </p>
+            <div class="keywords">
+                <span>مونتاژ برد الکترونیکی</span>
+                <span>مونتاژ قطعات الکترونیکی</span>
+                <span>مونتاژ قطعات اس ام دی</span>
+                <span>مونتاژ قطعات دیپ</span>
+                <span>مونتاژ قطعات SMD</span>
+                <span>مونتاژ قطعات Dip</span>
+                <span>مونتاژ دستی قطعات الکترونیکی</span>
+            </div>
         </div>
         <div class="hero-image">
-            <img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085130.jpg" alt="نمونه برد" loading="lazy" width="600" height="400">
+            <img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085130.jpg" alt="نمونه برد الکترونیکی مونتاژ شده" loading="lazy" width="600" height="400">
         </div>
     </div>
 </section>
 
-<!-- ===== SERVICES ===== -->
 <div class="container">
     <h2 class="section-title">خدمات تخصصی ما</h2>
-    <p class="section-sub">پیشرفته‌ترین خطوط تولید برای تمام نیازهای مونتاژ شما</p>
+    <p class="section-sub">ما با بهره‌گیری از پیشرفته‌ترین خطوط تولید، تمام نیازهای مونتاژ شما را پوشش می‌دهیم.</p>
     <div class="services-grid">
         <div class="service-card">
             <div class="service-icon"><i class="fas fa-microchip"></i></div>
             <h3>مونتاژ SMD</h3>
-            <p>قطعات سطح‌نصب با دقت و سرعت بالا</p>
+            <p>مونتاژ قطعات سطح‌نصب (SMD) با دقت بالا و سرعت مناسب</p>
         </div>
         <div class="service-card">
             <div class="service-icon"><i class="fas fa-plug"></i></div>
-            <h3>مونتاژ DIP</h3>
-            <p>قطعات دوپایه و سنتی با کیفیت عالی</p>
+            <h3>مونتاژ DIP / THT</h3>
+            <p>مونتاژ قطعات دوپایه و سنتی با کیفیت عالی و تیراژ دلخواه</p>
         </div>
         <div class="service-card">
             <div class="service-icon"><i class="fas fa-hand-paper"></i></div>
             <h3>مونتاژ دستی</h3>
-            <p>لحیم‌کاری دقیق برای نمونه‌های خاص</p>
+            <p>لحیم‌کاری و مونتاژ دقیق قطعات خاص و نمونه‌های اولیه</p>
         </div>
         <div class="service-card">
             <div class="service-icon"><i class="fas fa-cubes"></i></div>
             <h3>محصول نهایی</h3>
-            <p>مونتاژ، تست و بسته‌بندی کامل</p>
+            <p>مونتاژ کامل، تست و بسته‌بندی محصول نهایی الکترونیکی</p>
         </div>
     </div>
 </div>
 
-<!-- ===== GALLERY ===== -->
 <section id="gallery" class="gallery-section">
     <div class="container">
         <h2 class="section-title">گالری نمونه‌کارها</h2>
-        <p class="section-sub">نمونه‌ای از بردهای مونتاژ شده در مجموعه</p>
+        <p class="section-sub">تصاویری از بردهای الکترونیکی مونتاژ شده در مجموعه ما</p>
         <div class="gallery-grid">
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085046.jpg" alt="برد ۱" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085130.jpg" alt="برد ۲" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085146.jpg" alt="برد ۳" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085322.jpg" alt="برد ۴" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085329.jpg" alt="برد ۵" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085454.jpg" alt="برد ۶" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085547.jpg" alt="برد ۷" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085552.jpg" alt="برد ۸" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085639.jpg" alt="برد ۹" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085653.jpg" alt="برد ۱۰" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085825.jpg" alt="برد ۱۱" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085846.jpg" alt="برد ۱۲" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085940.jpg" alt="برد ۱۳" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085952.jpg" alt="برد ۱۴" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_090059.jpg" alt="برد ۱۵" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_090102.jpg" alt="برد ۱۶" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260721_215540.jpg" alt="برد ۱۷" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260721_215556.jpg" alt="برد ۱۸" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260721_215631.jpg" alt="برد ۱۹" loading="lazy"></div>
-            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260721_215637.jpg" alt="برد ۲۰" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085046.jpg" alt="برد الکترونیکی ۱" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085130.jpg" alt="برد الکترونیکی ۲" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085146.jpg" alt="برد الکترونیکی ۳" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085322.jpg" alt="برد الکترونیکی ۴" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085329.jpg" alt="برد الکترونیکی ۵" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085454.jpg" alt="برد الکترونیکی ۶" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085547.jpg" alt="برد الکترونیکی ۷" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085552.jpg" alt="برد الکترونیکی ۸" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085639.jpg" alt="برد الکترونیکی ۹" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085653.jpg" alt="برد الکترونیکی ۱۰" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085825.jpg" alt="برد الکترونیکی ۱۱" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085846.jpg" alt="برد الکترونیکی ۱۲" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085940.jpg" alt="برد الکترونیکی ۱۳" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_085952.jpg" alt="برد الکترونیکی ۱۴" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_090059.jpg" alt="برد الکترونیکی ۱۵" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260720_090102.jpg" alt="برد الکترونیکی ۱۶" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260721_215540.jpg" alt="برد الکترونیکی ۱۷" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260721_215556.jpg" alt="برد الکترونیکی ۱۸" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260721_215631.jpg" alt="برد الکترونیکی ۱۹" loading="lazy"></div>
+            <div class="gallery-item"><img src="https://raw.githubusercontent.com/mhkh110/board/main/IMG_20260721_215637.jpg" alt="برد الکترونیکی ۲۰" loading="lazy"></div>
         </div>
     </div>
 </section>
 
-<!-- ===== STATS ===== -->
 <div class="container">
     <div class="stats-section">
         <div class="stats-grid">
-            <div class="stat-item"><h3>۱۳+</h3><p>سال تجربه</p></div>
-            <div class="stat-item"><h3>۲۰+</h3><p>پروژه موفق</p></div>
-            <div class="stat-item"><h3>۱۰۰%</h3><p>تضمین کیفیت</p></div>
-            <div class="stat-item"><h3>۲۴/۷</h3><p>پشتیبانی</p></div>
+            <div class="stat-item"><h3>۱۳+</h3><p>سال تجربه درخشان</p></div>
+            <div class="stat-item"><h3>۲۰+</h3><p>پروژه موفق صنعتی</p></div>
+            <div class="stat-item"><h3>۱۰۰%</h3><p>تضمین کیفیت مونتاژ</p></div>
+            <div class="stat-item"><h3>۲۴/۷</h3><p>پشتیبانی و مشاوره</p></div>
         </div>
     </div>
 </div>
 
-<!-- ===== CONTACT ===== -->
 <section id="contact" class="container">
     <div class="contact-section">
         <h2 class="section-title" style="text-align:right;">ارتباط با ما</h2>
         <div class="contact-grid">
             <div>
                 <ul class="contact-info-list">
-                    <li><i class="fas fa-map-marker-alt"></i> تهرانپارس، بلوار شاهد، خیابان شهید ارفاقی، پلاک ۱۶۸، واحد اول</li>
+                    <li><i class="fas fa-map-marker-alt"></i> تهرانپارس، بلوار شاهد (بلوار پروین)، خیابان شهید ارفاقی (۲۱۰ شرقی)، تقاطع شادآلویی (۱۳۱ شمالی)، پلاک ۱۶۸، واحد اول</li>
                     <li><i class="fas fa-phone-alt"></i> <a href="tel:02177141351">۰۲۱-۷۷۱۴۱۳۵۱</a></li>
                     <li><i class="fas fa-mobile-alt"></i> <a href="tel:09129589806">۰۹۱۲۹۵۸۹۸۰۶</a> (همراه فروش)</li>
                     <li><i class="fas fa-envelope"></i> <a href="mailto:hamidi.shm@gmail.com">hamidi.shm@gmail.com</a></li>
                     <li><i class="fas fa-check-circle"></i> ارسال رایگان در تهران</li>
                     <li><i class="fas fa-check-circle"></i> ارسال به سراسر ایران</li>
+                    <li><i class="fas fa-check-circle"></i> محصولات تخصصی</li>
                     <li><i class="fas fa-check-circle"></i> تضمین اصل بودن کالا</li>
                 </ul>
             </div>
@@ -158,7 +148,7 @@
                     <input type="text" placeholder="نام و نام خانوادگی" required>
                     <input type="email" placeholder="ایمیل" required>
                     <input type="tel" placeholder="شماره تماس">
-                    <textarea rows="4" placeholder="توضیح پروژه..."></textarea>
+                    <textarea rows="4" placeholder="توضیح پروژه یا درخواست شما..."></textarea>
                     <button type="submit"><i class="fas fa-paper-plane"></i> ارسال درخواست</button>
                 </form>
             </div>
@@ -166,11 +156,14 @@
     </div>
 </section>
 
-<!-- ===== FOOTER ===== -->
 <footer>
     <div class="container">
-        <p style="margin-bottom:10px;"><i class="fas fa-microchip"></i> مونتاژ الکترونیک البرز – خدمات تخصصی مونتاژ بردهای الکترونیکی</p>
-        <p style="font-size:.85rem;">© ۲۰۲۶ تمامی حقوق محفوظ است. | <a href="mailto:hamidi.shm@gmail.com">hamidi.shm@gmail.com</a> | <a href="tel:02177141351">۰۲۱-۷۷۱۴۱۳۵۱</a></p>
+        <p style="margin-bottom:10px;"><i class="fas fa-microchip"></i> hilife tajhiz – ارائه‌دهنده خدمات تخصصی مونتاژ بردهای الکترونیکی</p>
+        <p style="font-size:.85rem;">
+            © ۲۰۲۶ تمامی حقوق محفوظ است. | 
+            <a href="mailto:hamidi.shm@gmail.com">hamidi.shm@gmail.com</a> | 
+            <a href="tel:02177141351">۰۲۱-۷۷۱۴۱۳۵۱</a>
+        </p>
     </div>
 </footer>
 
